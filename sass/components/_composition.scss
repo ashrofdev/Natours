@@ -10,19 +10,68 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .4);
+            width: 33.33333%;
+        }
+        @include respond(phone) {
+            float: left;
+            position: relative;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .4);
+            width: 33.33333%
+        }
+
         &--p1 {
             left: 0;
             top: -2rem;
+            @include respond(tab-port) {
+                position: absolute;
+                top: 0;
+              
+            }
+            @include respond(phone) {
+                position: absolute;
+                top: 0;
+              
+            }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
+            @include respond(tab-port) {
+                position: absolute;
+                top: -1.5rem;
+                left: 12rem;
+                transform: scale(1.2);
+                z-index: 100;
+            }
+            @include respond(phone) {
+                position: absolute;
+                top: -1.5rem;
+                left: 12rem;
+                transform: scale(1.2);
+                z-index: 100;
+            }
         }
 
         &--p3 {
             left: 20%;
             top: 10rem;
+            @include respond(tab-port) {
+                position: absolute;
+                top: 0;
+                left: 25rem;
+              
+            }
+            @include respond(phone) {
+                position: absolute;
+                top: 0;
+                left: 25rem;
+              
+            }
         }
 
         &:hover {
