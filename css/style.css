@@ -679,6 +679,10 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        padding: 1.5rem; } }
 
 .row {
   max-width: 114rem;
@@ -992,7 +996,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 20rem 2rem; } }
 
 .section-features {
   padding: 20rem 0;
