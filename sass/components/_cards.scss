@@ -209,7 +209,7 @@
             width: 100%;
             padding: 7rem 4rem 4rem 4rem;
             @include respond (phone) {
-                padding: 7rem 0 4rem 4rem;
+                padding: 7rem 0 4rem 0;
             }
         }
     

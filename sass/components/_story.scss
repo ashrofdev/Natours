@@ -16,12 +16,18 @@
     }
 
     @include respond(phone) {
-        transform: skew(0)
+        transform: skew(0);
+   
+      
     }
 
     &  p {
         color: rgb(189, 188, 188);
         font-size: 1.6rem;
+        @include respond(phone) {
+            font-size: 1rem;
+           
+        }
     }
     &  a {
         text-decoration: none;

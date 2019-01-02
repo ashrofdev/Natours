@@ -34,7 +34,8 @@
             @include respond(phone) {
                 position: absolute;
                 top: 0;
-              
+                transform: scale(1.2);
+                left: 3rem;
             }
         }
 
@@ -51,8 +52,8 @@
             @include respond(phone) {
                 position: absolute;
                 top: -1.5rem;
-                left: 2rem;
-                transform: scale(1.2);
+                left: 8rem;
+                transform: scale(1.4);
                 z-index: 100;
             }
         }
@@ -69,8 +70,8 @@
             @include respond(phone) {
                 position: absolute;
                 top: 0;
-                left: 5rem;
-              
+                left: 12rem;
+                transform: scale(1.2)
             }
         }
 
@@ -86,4 +87,5 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
+
 }
