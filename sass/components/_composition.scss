@@ -51,7 +51,7 @@
             @include respond(phone) {
                 position: absolute;
                 top: -1.5rem;
-                left: 12rem;
+                left: 2rem;
                 transform: scale(1.2);
                 z-index: 100;
             }
@@ -63,13 +63,13 @@
             @include respond(tab-port) {
                 position: absolute;
                 top: 0;
-                left: 25rem;
+                left: 15rem;
               
             }
             @include respond(phone) {
                 position: absolute;
                 top: 0;
-                left: 25rem;
+                left: 5rem;
               
             }
         }
@@ -86,5 +86,4 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
-    //composition:hover composition__photo:not(:hover) {
 }

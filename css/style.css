@@ -72,15 +72,11 @@ body {
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */ }
+    animation-timing-function: ease-out; }
     @media (max-width: 35.7em) {
       .heading-primary--main {
-        letter-spacing: 1rem;
-        font-size: 5rem; } }
+        letter-spacing: .7rem;
+        font-size: 3rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -89,7 +85,9 @@ body {
     animation: moveInRight 1s ease-out; }
     @media (max-width: 35.7em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .5rem;
+        font-size: 1rem;
+        letter-spacing: 1rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -106,7 +104,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 35.7em) {
     .heading-secondary {
-      font-size: 2.5rem; } }
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -115,6 +113,10 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 35.7em) {
+    .heading-tertiary {
+      font-size: 1rem;
+      font-weight: 700; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -170,6 +172,10 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 35.7em) {
+    .btn, .btn:link, .btn:visited {
+      padding: .5rem 1rem;
+      font-size: 1rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -351,7 +357,11 @@ body {
         left: 0;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
+        padding: 7rem 4rem 4rem 4rem; } }
+    @media (max-width: 56.25em) and (max-width: 35.7em) {
+      .card__cta {
+        padding: 7rem 0 4rem 4rem; } }
+  @media (max-width: 56.25em) {
       .card__price-box {
         margin-bottom: 4rem;
         font-weight: 300; }
@@ -410,7 +420,7 @@ body {
         .composition__photo--p2 {
           position: absolute;
           top: -1.5rem;
-          left: 12rem;
+          left: 2rem;
           transform: scale(1.2);
           z-index: 100; } }
     .composition__photo--p3 {
@@ -420,12 +430,12 @@ body {
         .composition__photo--p3 {
           position: absolute;
           top: 0;
-          left: 25rem; } }
+          left: 15rem; } }
       @media (max-width: 35.7em) {
         .composition__photo--p3 {
           position: absolute;
           top: 0;
-          left: 25rem; } }
+          left: 5rem; } }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
@@ -499,7 +509,7 @@ body {
   @media (max-width: 56.25em) {
     .form__radio-group {
       width: 100%;
-      margin-bottom: 2rem; } }
+      margin-bottom: 1.5rem; } }
 
 .form__radio-input {
   display: none; }
@@ -509,6 +519,10 @@ body {
   cursor: pointer;
   position: relative;
   padding-left: 4.5rem; }
+  @media (max-width: 35.7em) {
+    .form__radio-label {
+      font-size: 1rem;
+      padding-left: 4rem; } }
 
 .form__radio-button {
   height: 3rem;
@@ -714,10 +728,18 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 3rem;
+    left: 3rem; }
+    @media (max-width: 35.7em) {
+      .header__logo-box {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem; } }
   .header__logo {
     height: 3.5rem; }
+    @media (max-width: 35.7em) {
+      .header__logo {
+        height: 1.5rem; } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -994,7 +1016,7 @@ body {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   @media (max-width: 56.25em) {
     .section-book {
-      padding: 10rem 0; } }
+      padding: 5rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
@@ -1017,3 +1039,7 @@ body {
     @media (max-width: 56.25em) {
       .book__form {
         width: 100%; } }
+    @media (max-width: 35.7em) {
+      .book__form {
+        width: 100%;
+        padding: 3rem; } }

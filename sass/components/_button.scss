@@ -10,8 +10,10 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
-
-        //Change for the <button> element
+        @include respond(phone) {
+            padding: .5rem 1rem; 
+            font-size: 1rem;
+        }
         border: none;
         cursor: pointer;
     }

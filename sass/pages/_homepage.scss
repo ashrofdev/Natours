@@ -51,7 +51,7 @@
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
     @include respond(tab-port) {
-        padding: 10rem 0;
+        padding: 5rem 0;
      }
 }
 
@@ -90,6 +90,10 @@ url(../img/nat-10.jpg);
         }
         @include respond(tab-port) {
             width: 100%;
+        }
+        @include respond(phone) {
+            width: 100%;
+            padding: 3rem;
         }
     }
 }
