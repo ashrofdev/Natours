@@ -234,4 +234,11 @@
     }
 }
 
+.column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
 
