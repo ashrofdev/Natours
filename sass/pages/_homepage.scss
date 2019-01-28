@@ -8,7 +8,7 @@
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 18rem 0;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -86,7 +86,7 @@ url(../img/nat-10.jpg);
 
     &__form {
         width: 50%;
-        padding: 6rem;
+        padding: 4rem;
 
         @include respond(tab-land) {
             width: 65%;

@@ -2,13 +2,14 @@
 
     display: grid;
     grid-template-rows: repeat(3, max-content);
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     justify-items: center;
     align-items: center;
 
     background-color: rgba($color-white, .8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
@@ -26,4 +27,11 @@
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
+}
+
+.colum {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 20rem));
+    grid-gap: 1rem;
+    justify-content: center;
 }

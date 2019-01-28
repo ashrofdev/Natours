@@ -90,9 +90,7 @@
     }
 
     &__heading-span {
-        padding: 1rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
+        padding: .5rem .5rem;
         display: inline-block;
     
 
@@ -236,8 +234,8 @@
 
 .column {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 27rem));
+    grid-gap: 1rem;
     justify-content: center;
 }
 
